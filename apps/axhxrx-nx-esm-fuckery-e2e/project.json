@@ -1,0 +1,17 @@
+{
+  "name": "axhxrx-nx-esm-fuckery-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "implicitDependencies": ["axhxrx-nx-esm-fuckery"],
+  "targets": {
+    "e2e": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{e2eProjectRoot}"],
+      "options": {
+        "jestConfig": "apps/axhxrx-nx-esm-fuckery-e2e/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "dependsOn": ["axhxrx-nx-esm-fuckery:build"]
+    }
+  }
+}

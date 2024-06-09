@@ -1,0 +1,56 @@
+{
+  "name": "axhxrx-nx-esm-fuckery",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/axhxrx-nx-esm-fuckery/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "platform": "node",
+        "outputPath": "dist/apps/axhxrx-nx-esm-fuckery",
+        "format": ["cjs"],
+        "bundle": false,
+        "main": "apps/axhxrx-nx-esm-fuckery/src/main.ts",
+        "tsConfig": "apps/axhxrx-nx-esm-fuckery/tsconfig.app.json",
+        "assets": ["apps/axhxrx-nx-esm-fuckery/src/assets"],
+        "generatePackageJson": true,
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "esbuildOptions": {
+            "sourcemap": false,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "axhxrx-nx-esm-fuckery:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "axhxrx-nx-esm-fuckery:build:development"
+        },
+        "production": {
+          "buildTarget": "axhxrx-nx-esm-fuckery:build:production"
+        }
+      }
+    }
+  }
+}
