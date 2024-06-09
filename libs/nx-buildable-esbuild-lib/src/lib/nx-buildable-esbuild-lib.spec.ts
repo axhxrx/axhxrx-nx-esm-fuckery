@@ -1,5 +1,5 @@
-import { nxBuildableEsbuildLib } from './nx-buildable-esbuild-lib.ts';
-import { Animal } from './Animal.ts';
+import { nxBuildableEsbuildLib } from './nx-buildable-esbuild-lib';
+import { Animal } from './Animal';
 
 describe('nxBuildableEsbuildLib', () => {
   it('should work', () => {

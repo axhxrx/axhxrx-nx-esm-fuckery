@@ -1,4 +1,4 @@
-import { Animal } from './Animal.ts';
+import { Animal } from './Animal';
 
 export class Tarantula extends Animal
 {
