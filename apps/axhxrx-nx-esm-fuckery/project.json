@@ -12,7 +12,7 @@
       "options": {
         "platform": "node",
         "outputPath": "dist/apps/axhxrx-nx-esm-fuckery",
-        "format": ["cjs"],
+        "format": ["esm"],
         "bundle": false,
         "main": "apps/axhxrx-nx-esm-fuckery/src/main.ts",
         "tsConfig": "apps/axhxrx-nx-esm-fuckery/tsconfig.app.json",
