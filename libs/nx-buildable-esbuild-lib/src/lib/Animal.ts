@@ -1,12 +1,13 @@
-import * as mod from "@axhxrx/date";
+// import * as mod from "@axhxrx/date";
+import { dateToIS08601WithTimeZoneOffset } from "@axhxrx/date";
 
 export class Animal
 {
   name: string;
   age: number;
   species: string;
-  
-  born = mod.dateToIS08601WithTimeZoneOffset();
+
+  born = dateToIS08601WithTimeZoneOffset();
 
   constructor(name: string, age: number, species: string)
   {
