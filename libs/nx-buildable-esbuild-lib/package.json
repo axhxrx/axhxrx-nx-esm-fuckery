@@ -2,7 +2,7 @@
   "name": "@local/nx-buildable-esbuild-lib",
   "version": "0.0.1",
   "dependencies": {},
-  "type": "commonjs",
+  "type": "module",
   "main": "./index.cjs",
   "private": true
 }

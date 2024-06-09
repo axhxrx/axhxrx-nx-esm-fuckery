@@ -13,7 +13,7 @@
         "platform": "node",
         "outputPath": "dist/apps/axhxrx-nx-esm-fuckery",
         "format": ["esm"],
-        "bundle": false,
+        "bundle": true,
         "main": "apps/axhxrx-nx-esm-fuckery/src/main.ts",
         "tsConfig": "apps/axhxrx-nx-esm-fuckery/tsconfig.app.json",
         "assets": ["apps/axhxrx-nx-esm-fuckery/src/assets"],

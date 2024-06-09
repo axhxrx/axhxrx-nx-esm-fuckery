@@ -13,8 +13,9 @@
         "main": "libs/nx-buildable-esbuild-lib/src/index.ts",
         "tsConfig": "libs/nx-buildable-esbuild-lib/tsconfig.lib.json",
         "assets": ["libs/nx-buildable-esbuild-lib/*.md"],
-        "generatePackageJson": true,
-        "format": ["cjs"]
+        "format": [
+          "esm"
+        ]
       }
     },
     "test": {

@@ -1,3 +1,3 @@
-export * from './lib/nx-buildable-esbuild-lib';
-export * from './lib/Animal';
-export * from './lib/Tarantula';
+export * from './lib/nx-buildable-esbuild-lib.ts';
+export * from './lib/Animal.ts';
+export * from './lib/Tarantula.ts';
