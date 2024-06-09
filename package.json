@@ -7,10 +7,12 @@
   "private": true,
   "dependencies": {
     "@axhxrx/date": "npm:@jsr/axhxrx__date@^0.1.4",
+    "@nx/angular": "^19.2.2",
     "axios": "^1.6.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "@angular-devkit/core": "~18.0.0",
     "@nx/esbuild": "19.2.2",
     "@nx/eslint": "19.2.2",
     "@nx/eslint-plugin": "19.2.2",
